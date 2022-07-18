@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список ваших дел</title>
+  <!-- подключаем стили -->
+  <link rel="stylesheet" href="style.css">
+  <!-- подключаем шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- контент -->
+  <main class="app">
+
+    <!-- заголовок -->
+    <section class="greeting">
+      <h2 class="title">
+        Как ваше имя <input type="text" id="name" placeholder="Ваше имя">
+      </h2>
+    </section>
+
+    <!-- список добавление -->
+    <section class="create-todo">
+      <h3>СПИСОК ДЕЛ</h3>
+
+      <form id="new-todo-form">
+
+        <h4>Что в вашем списке дел?</h4>
+        <input 
+          type="text" 
+          name="content" 
+          id="content" 
+          placeholder="вот ваше видео">
+
+          <!--  -->
+        <h4>Выбор категории</h4> 
+        <div class="options">
+          <!--  -->
+          <label>
+            <input 
+            type="radio" 
+            name="category" 
+            id="category1" 
+            value="business">
+            <span class="business bubble"></span>
+            <div>Рабочее</div>
+          </label>
+
+          <!--  -->
+          <label>
+            <input 
+            type="radio" 
+            name="category" 
+            id="category2" 
+            value="personal">
+            <span class="bubble personal"></span>
+            <div>Личное</div>
+          </label>
+
+        </div> 
+
+        <!--  -->
+        <input type="submit" value="Добавить">
+      </form>
+    </section>
+
+    <!-- список редактирование-->
+    <section class="todo-list">
+      <h3>СПИСОК ДЕЛ</h3>
+      <div class="list" id="todo-list">
+    
+        <!-- <div class="todo-item done">
+          <label>
+            <input type="checkbox">
+            <span class="bubble business"></span>
+          </label>
+    
+          <div class="todo-content">
+            <input type="text" value="Make a video" readonly />
+          </div>
+    
+          <div class="actions">
+            <button class="edit">Изменить</button>
+            <button class="delete">Удалить</button>
+          </div>
+    
+        </div>
+    
+        <div class="todo-item">
+          <label>
+            <input type="checkbox">
+            <span class="bubble personal"></span>
+          </label>
+    
+          <div class="todo-content">
+            <input type="text" value="Get milk" readonly />
+          </div>
+    
+          <div class="actions">
+            <button class="edit">Изменить</button>
+            <button class="delete">Удалить</button>
+          </div>
+    
+        </div> -->
+
+        <!-- https://youtu.be/6eFwtaZf6zc?t=1993 -->
+      </div>
+    </section>
+  </main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- подключаем скрипт -->
+  <script src="main.js"></script>
+</body>
+</html>
