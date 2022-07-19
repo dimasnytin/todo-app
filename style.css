@@ -181,8 +181,6 @@ input:checked~.bubble::after {
 }
 
 
-
-
 .todo-list .list {
   margin: 1rem 0;
 }
@@ -244,14 +242,4 @@ input:checked~.bubble::after {
   color: var(--grey);
 }
 
-@media (max-width: 520px) {
-  .list {
-  min-width: 478px;
-  }
-}
 
-@media (max-width: 520px) {
-  section {
-    min-width: 478px;
-  }
-}
