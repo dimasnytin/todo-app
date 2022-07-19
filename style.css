@@ -47,6 +47,8 @@ section {
   padding-right: 1.5rem;
 }
 
+
+
 h3 {
   color: var(--dark);
   font-size: 1rem;
@@ -178,6 +180,9 @@ input:checked~.bubble::after {
   opacity: 0.75;
 }
 
+
+
+
 .todo-list .list {
   margin: 1rem 0;
 }
@@ -237,4 +242,16 @@ input:checked~.bubble::after {
 .todo-item.done .todo-content input {
   text-decoration: line-through;
   color: var(--grey);
+}
+
+@media (max-width: 520px) {
+  .list {
+  min-width: 478px;
+  }
+}
+
+@media (max-width: 520px) {
+  section {
+    min-width: 478px;
+  }
 }
