@@ -67,6 +67,12 @@ h4 {
   display: flex;
 }
 
+@media(max-width: 570px){
+  .greeting .title{
+    flex-direction: column;
+  }
+} 
+
 .greeting .title input {
   margin-left: 0.5rem;
   flex: 1 1 0%;
@@ -203,6 +209,7 @@ input:checked~.bubble::after {
 
 .todo-item .todo-content {
   flex: 1 1 0%;
+  min-width: 48px;
 }
 
 .todo-item .todo-content input {
@@ -241,5 +248,4 @@ input:checked~.bubble::after {
   text-decoration: line-through;
   color: var(--grey);
 }
-
 
